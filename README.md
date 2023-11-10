@@ -1,5 +1,5 @@
 <p align="center">
-Boundary analysis based Reachability analysis Toolbox for dynamic systems in Python
+Reachability Analysis Toolbox Based on Boundary Propagation in Python
 </p>
 
 
