@@ -26,9 +26,11 @@ namely a set enclosing its boundary.
 
 # Installation
 
-No need to do installation, just copy the source code into appropriate directory, like using some
+To incorporate the source code, there is no requirement for installation; simply copy it into the appropriate directory, similar to using a third-party library in Matlab. We strongly suggest utilizing `Pycharm' as an IDE for both development and testing purposes.
+
+<!-- No need to do installation, just copy the source code into appropriate directory, like using some
 Matlab third-party library. We highly recommend you to use `Pycharm` as an IDE for development and
-testing.
+testing. -->
 
 ## Virtual Environment
 
