@@ -146,9 +146,7 @@ plot(tp, [0, 1])
 
 ### set explosion
 
-- Due to the wrapping effect of set propagation-based algorithms, it is inevitable that the computed reachable state sets may be overly conservative under inappropriate settings, thereby preventing the attainment of reachable state sets that satisfy the desired requirements.
-
-To address these issues, several strategies can be employed to enhance the accuracy of the reachable set calculation. One technique involves dividing the boundary of the initial set into smaller cells. Furthermore, reducing the step size and increasing the order of the Taylor expansion can also contribute to improved accuracy.
+- Due to the wrapping effect of set propagation-based algorithms, it is inevitable that the computed reachable state sets may be overly conservative under inappropriate settings, thereby preventing the attainment of reachable state sets that satisfy the desired requirements. To address these issues, several strategies can be employed to enhance the accuracy of the reachable set calculation. One technique involves dividing the boundary of the initial set into smaller cells. Furthermore, reducing the step size and increasing the order of the Taylor expansion can also contribute to improved accuracy.
 <!-- Due to the wrapping effect of set propagation based algorithms, it is inevitable that the range of
   the computed
   reachable state sets is too conservative under inappropriate settings, making it impossible to
