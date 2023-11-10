@@ -125,7 +125,8 @@ plot(tp, [0, 1])
 
 ### the computation is too slow
 
-- The tool supports two modes of computation for reachable sets, one is to compute the reachable set
+- The tool supports two modes of computation for reachable sets. The first mode calculates the reachable set of evolved states based on the entire set of states in a set propagation manner. The second mode calculates the reachable set of evolved states based on the initial state set boundary. There are several factors contributing to the slow computation of the tool: large computational time intervals, small steps, high Taylor expansion orders, and high dimensionality of the dynamical system. To address these issues, it is recommended to conduct experiments with a smaller computational time horizon, a lower expansion order (e.g., 2), and a larger time step. Based on the results obtained from this initial setting, gradually increase the computational time horizon and expansion order to obtain the desired set of reachable states while managing time consumption effectively.
+<!--The tool supports two modes of computation for reachable sets, one is to compute the reachable set
   of evolved states
   based on the set of states as a whole in a set propagation manner, and the other is to compute the
   reachable set of
@@ -141,11 +142,14 @@ plot(tp, [0, 1])
   horizon and the order
   of expansion according to the results of this setting, in order to obtain the desired set of
   reachable states at a
-  suitable time consumption.
+  suitable time consumption.-->
 
 ### set explosion
 
-- Due to the wrapping effect of set propagation based algorithms, it is inevitable that the range of
+- Due to the wrapping effect of set propagation-based algorithms, it is inevitable that the computed reachable state sets may be overly conservative under inappropriate settings, thereby preventing the attainment of reachable state sets that satisfy the desired requirements.
+
+To address these issues, several strategies can be employed to enhance the accuracy of the reachable set calculation. One technique involves dividing the boundary of the initial set into smaller cells. Furthermore, reducing the step size and increasing the order of the Taylor expansion can also contribute to improved accuracy.
+<!-- Due to the wrapping effect of set propagation based algorithms, it is inevitable that the range of
   the computed
   reachable state sets is too conservative under inappropriate settings, making it impossible to
   obtain a reachable
@@ -153,10 +157,10 @@ plot(tp, [0, 1])
 
   If these problems occur, the accuracy of the reachable set calculation can be improved by
   calculating the reachable
-  set based on the boundaries, or by split initial set into small cells, or by reducing the step and
+  set based on the boundaries, or by split the boundary of the initial set into small cells, or by reducing the step and
   increasing the
   order of the Taylor expansion. then the set explosion problem can be avoided in the computation
-  possibly.
+  possibly.-->
 
 > Feel free to contact [dingjianqiang0x@gmail.com](mailto:dingjianqiang0x@gmail.com) if you find any
 > issues or bugs in this code, or you struggle to run it in any way.
